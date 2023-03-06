@@ -1,17 +1,17 @@
-## Assignment_1 csd3755 H548
+## Assignment_1 csd3755 HY548
 
 ##### 1) Nginx is one of the most popular web servers. Container images are readily available on Docker Hub. Write down the commands needed to:
 
 ###### a) Download the images tagged 1.23.3 and 1.23.3-alpine locally.
 
-* docker pull nginx:1.21.6
-* docker pull nginx:1.21.6-alpine
+* docker pull nginx:1.23.3
+* docker pull nginx:1.23.3-alpine
 
 ###### b) Compare the sizes of the two images.
 
 * docker images. Lists the downloaded images and shows the size as well.
-  nginx:1.21.6 &rarr; 142 MB
-  nginx:1.21.6-alpine &rarr; 23.4 MB
+  nginx:1.23.3 &rarr; 142 MB
+  nginx:1.23.3-alpine &rarr; 23.4 MB
 
 ###### c) Start one of the two images in the background, with the appropriate network settings to forward port 80 locally and use a browser (or curl or wget) to see that calls are answered. What is the answer?
 
