@@ -157,3 +157,4 @@ Final size with builder container: 23.4 MB
 
 ##### 5) Upload the Dockerfile from the previous exercise to your GitHub repository. Create a GitHub Action that will automatically build and push the image to your Docker Hub account (the workflow should be initiated by the user). Provide the YAML of the workflow you made.
 
+Είναι το .github/workflows/docker-image.yml
