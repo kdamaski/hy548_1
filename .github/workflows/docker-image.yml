@@ -15,5 +15,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag kdamaski/nginx-alpine-hy548
+        docker build --file Dockerfile --tag kdamaski/nginx-alpine-hy548
+        echo "${{ secrets.DOCKERPWD }}" | docker login -u "kdamaski" --password-stdin
         docker push kdamaski/nginx-alpine-hy548:latest
+        docker logout
