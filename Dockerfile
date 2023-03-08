@@ -12,4 +12,3 @@ RUN cd /hy548/html/; hugo -D
 FROM nginx:1.23.3-alpine
 
 COPY --from=builder /hy548/html/public/index.html /usr/share/nginx/html/
-
