@@ -19,3 +19,5 @@ jobs:
         echo "${{ secrets.DOCKERPWD }}" | docker login -u "kdamaski" --password-stdin
         docker push kdamaski/nginx-alpine-hy548:latest
         docker logout
+        
+# changing stuff to test
